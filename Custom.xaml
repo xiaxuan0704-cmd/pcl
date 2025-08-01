@@ -8,7 +8,7 @@
 <local:MyCard Title="作者信息" Margin="0,0,0,15" CanSwap="True" IsSwaped="false">
     <StackPanel Margin="25,40,23,15">
         <local:MyHint Margin="0,8,0,20" Theme="Blue"
-                    Text="【主创作者：我的世界夏轩】【联合作者：我的世界夏轩】" />
+                    Text="【主创作者：我的世界夏轩】" />
                             <local:MyHint Margin="0,8,0,20" Theme="Yellow"
                     Text="「这是一个自动更新的公告，你可以经常查看这里的内容有没有更新。目前公告版本：1.0.0  日期：08.02」" />
                             <local:MyHint Margin="0,8,0,20" Theme="Yellow"
@@ -22,9 +22,9 @@
             </Grid.ColumnDefinitions>
             <!-- 调整后的按钮样式，与服务器功能区域一致 -->
             <local:MyButton Grid.Column="0" Margin="6,4,6,4" Height="35" ColorType="Highlight"
-                        Text="打开夏轩的B站主页" EventType="打开网页" EventData="https://space.bilibili.com/13059087" />
+                        Text="夏轩的B站主页" EventType="打开网页" EventData="https://space.bilibili.com/13059087" />
             <local:MyButton Grid.Column="1" Margin="6,4,6,4" Height="35" ColorType="Highlight"
-                        Text="打开夏轩的抖音主页" EventType="打开网页" EventData="https://www.douyin.com/search/我的世界夏轩" />
+                        Text="夏轩的抖音主页" EventType="打开网页" EventData="https://www.douyin.com/search/我的世界夏轩" />
             <local:MyButton Grid.Column="2" Margin="6,4,6,4" Height="35" ColorType="Highlight"
                         Text="进入官方q群" EventType="打开网页" EventData="https://qm.qq.com/q/gHc0DBoFnW" />
             <local:MyButton Grid.Column="3" Margin="6,4,6,4" Height="35" ColorType="Highlight"
@@ -37,10 +37,11 @@
 <local:MyCard Title="更新日志" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
             <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="
-[红圆]加入5个世界BOSS常驻刷新
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="加入5个世界BOSS常驻刷新"/>
+<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
                     Text="------------------------------------------" />
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="
 凋零风暴 ：血量10000 攻击500
 超高特效还原凋零风暴BOSS 用眼部吸人造成伤害 召唤次元陨石造成伤害 用触手攻击 召唤凋零小兵
   " />
