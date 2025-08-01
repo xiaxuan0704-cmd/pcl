@@ -1,15 +1,77 @@
-﻿<!-- 这是 PCL 的主页自定义文件。你可以通过修改这个文件来自定义 PCL 主页：添加文本、打开网页、启动游戏，等等。
+<!-- 这是 PCL 的主页自定义文件。你可以通过修改这个文件来自定义 PCL 主页：添加文本、打开网页、启动游戏，等等。
      如果你倒腾这个文件把 PCL 玩炸了，把这个文件直接删除就行了。
      下列内容均基于 WPF 框架。你可以在继续之前先尝试自学 XAML 与 WPF 的基础，这能让你更轻松地理解下列内容。
      你也可以使用 Ctrl + F 快速查找。例如，若需要改变文本颜色，则搜索 “颜色” 即可。 -->
 
-<local:MyCard Title="q群在这哦" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+
+        <local:MyHint Text="■禁止盗用声明■ 禁止任何形式的：- 二次分发- 商业盗用- 修改后重新发布。（皮肤包 UI包 汉化包 BGM包 FTB任务包等，未经授权禁止用于其他整合发布！）" />
+<local:MyCard Title="作者信息" Margin="0,0,0,15" CanSwap="True" IsSwaped="false">
     <StackPanel Margin="25,40,23,15">
-        <local:MyHint Text="Q群：837343475" />
+        <local:MyHint Margin="0,8,0,20" Theme="Blue"
+                    Text="【主创作者：我的世界夏轩】【联合作者：我的世界夏轩】" />
+                            <local:MyHint Margin="0,8,0,20" Theme="Yellow"
+                    Text="「这是一个自动更新的公告，你可以经常查看这里的内容有没有更新。目前公告版本：1.0.0  日期：08.02」" />
+                            <local:MyHint Margin="0,8,0,20" Theme="Yellow"
+                    Text="「出现bug请点击下方按钮提交！」" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <!-- 调整后的按钮样式，与服务器功能区域一致 -->
+            <local:MyButton Grid.Column="0" Margin="6,4,6,4" Height="35" ColorType="Highlight"
+                        Text="打开夏轩的B站主页" EventType="打开网页" EventData="https://space.bilibili.com/13059087" />
+            <local:MyButton Grid.Column="1" Margin="6,4,6,4" Height="35" ColorType="Highlight"
+                        Text="打开夏轩的抖音主页" EventType="打开网页" EventData="https://www.douyin.com/search/我的世界夏轩" />
+            <local:MyButton Grid.Column="2" Margin="6,4,6,4" Height="35" ColorType="Highlight"
+                        Text="进入官方q群" EventType="打开网页" EventData="https://qm.qq.com/q/gHc0DBoFnW" />
+            <local:MyButton Grid.Column="3" Margin="6,4,6,4" Height="35" ColorType="Highlight"
+                        Text="BUG提交点这里" EventType="打开网页" EventData="https://qm.qq.com/q/gHc0DBoFnW" />
+        </Grid>
     </StackPanel>
 </local:MyCard>
 
 
+<local:MyCard Title="更新日志" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="
+[红圆]加入5个世界BOSS常驻刷新
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="------------------------------------------" />
+凋零风暴 ：血量10000 攻击500
+超高特效还原凋零风暴BOSS 用眼部吸人造成伤害 召唤次元陨石造成伤害 用触手攻击 召唤凋零小兵
+  " />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="------------------------------------------" />
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="超级监守者：血量10000 攻击500
+在普通监守者机制上魔改后 重做模型 技能 MM怪物系列 有超高的灵敏 厚重特效  
+超真实音效 利用各种机制怪物
+      " />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="------------------------------------------" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="玄岩龙主：血量1000攻击300
+在异界沙漠之海的山巅 一声震耳的咆哮响彻山谷 那是这片土地的守护神 蕴含恐怖的大地威压 超大建模BOSS 堪比哥斯拉！！
+幽冥蛇王：血量1000攻击800" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="------------------------------------------" />
+	        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="经典蛇王BOSS！在之前的服务端中大受好评的超级BOSS 拥有3种形态5个技能1个必杀的三头蛇王 降低到一定血量后还会断头 直至三头后陨落
+      " />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="------------------------------------------" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="黑暗老人 危险！血量1000 攻击不明
+在黑暗行走的神秘人 一把火焰剑是他的特征 如果你遇到他 请小心小心小心小心 
+目前还没有确切资料详细记载他 好像 从某个次元穿越而来！！
+      " />
+
+ </StackPanel>
+</local:MyCard>
 
 
 
